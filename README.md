@@ -9,11 +9,11 @@
 ### Jenkins
 
 * Pull the latest [Jenkins Docker image](https://hub.docker.com/_/jenkins/)
-  ```bash
+  ```console
   docker pull jenkins:2.60.3-alpine
   ```
 * Get the initial admin password
-   ```bash
+   ```console
    docker cp $(docker ps -aqf "ancestor=jenkins:2.60.3-alpine"):/var/jenkins_home/secrets/initialAdminPassword initialAdminPassword && cat initialAdminPassword && rm initialAdminPassword
    ```
 
