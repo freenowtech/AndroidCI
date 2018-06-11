@@ -16,5 +16,9 @@
    ```console
    docker cp $(docker ps -aqf "ancestor=jenkins:2.60.3-alpine"):/var/jenkins_home/secrets/initialAdminPassword initialAdminPassword && cat initialAdminPassword && rm initialAdminPassword
    ```
+* Run Jenkins
+   ```console
+   docker run -p 8080:8080 -p 50000:50000 -v $(pwd)/jenkins_home:/var/jenkins_home jenkins:2.60.3-alpine
+   ```
 
 ### Android SDK
