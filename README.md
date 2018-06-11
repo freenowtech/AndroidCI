@@ -12,5 +12,9 @@
   ```bash
   docker pull jenkins:2.60.3-alpine
   ```
+* Get the initial admin password
+   ```bash
+   docker cp $(docker ps -aqf "ancestor=jenkins:2.60.3-alpine"):/var/jenkins_home/secrets/initialAdminPassword initialAdminPassword && cat initialAdminPassword && rm initialAdminPassword
+   ```
 
 ### Android SDK
