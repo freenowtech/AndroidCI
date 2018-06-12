@@ -45,6 +45,12 @@
    
    For the sake of workshop, we will use the Docker host on the same machine where the Jenkins container is running.  Thus you can use the IP address of your host machine.  Or simply use a DNS name `host.docker.internal` if you're using the latest version of *docker-for-mac* or *docker-for-windows* ([not yet implemented for Linux](https://github.com/docker/for-linux/issues/264)).
    
+   And then you'll have to listen to the port:
    
+   ```bash
+   # on macOS
+   brew install socat
+   socat TCP-LISTEN:2375,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock
+   ```
 
 ### Android SDK
