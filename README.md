@@ -14,7 +14,7 @@
   ```
 * Get the initial admin password
    ```console
-   docker cp $(docker ps -aqf "ancestor=jenkins:2.60.3-alpine"):/var/jenkins_home/secrets/initialAdminPassword initialAdminPassword && cat initialAdminPassword && rm initialAdminPassword
+   docker cp $(docker ps -aq -f "ancestor=jenkins:2.60.3-alpine" -f "status=running"):/var/jenkins_home/secrets/initialAdminPassword initialAdminPassword && cat initialAdminPassword && rm initialAdminPassword
    ```
 * Run Jenkins
    ```console
