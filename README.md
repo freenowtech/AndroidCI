@@ -50,9 +50,22 @@
    ```bash
    # on macOS
    brew install socat
-   socat TCP-LISTEN:2375,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock
+   socat TCP-LISTEN:2376,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock
    ```
    
    Finally, you can click **Docker Agent templates...** -> **Add Docker Template**
+
+* SSH authentication (optional)
+
+   ```console
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ```
+   
+   The keys will be generated here by default:
+   
+   ```console
+   /var/jenkins_home/.ssh/id_rsa.pub
+   /var/jenkins_home/.ssh/id_rsa
+   ```
 
 ### Android SDK
