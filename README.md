@@ -36,5 +36,7 @@
 * Configure Docker Plugin
 
    Jenkins -> Manage Jenkins -> Configure System -> Cloud -> Add a new cloud -> Docker
+   
+   <img src="https://github.com/mytaxi/AndroidCI/blob/master/screenshots/jenkins_config_cloud_docker.png?raw=true">
 
 ### Android SDK
