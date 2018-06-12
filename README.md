@@ -35,8 +35,16 @@
 
 * Configure Docker Plugin
 
+   Setup guide (from the official plugin web page) is [here](https://wiki.jenkins.io/display/JENKINS/Docker+Plugin).
+
    Jenkins -> Manage Jenkins -> Configure System -> Cloud -> Add a new cloud -> Docker
    
    <img src="https://github.com/mytaxi/AndroidCI/blob/master/screenshots/jenkins_config_cloud_docker.png?raw=true">
+   
+   Regarding the **Docker Host URI**, it should be `tcp://<YOUR_DOCKER_HOST_IP_ADDRESS>:2376`
+   
+   For the sake of workshop, we will use the Docker host on the same machine where the Jenkins container is running.  Thus you can use the IP address of your host machine.  Or simply use a DNS name `host.docker.internal` if you're using the latest version of *docker-for-mac* or *docker-for-windows* ([not yet implemented for Linux](https://github.com/docker/for-linux/issues/264)).
+   
+   
 
 ### Android SDK
