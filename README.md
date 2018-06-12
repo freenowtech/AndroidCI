@@ -37,7 +37,7 @@
 
    Setup guide (from the official plugin web page) is [here](https://wiki.jenkins.io/display/JENKINS/Docker+Plugin).
 
-   Jenkins -> Manage Jenkins -> Configure System -> Cloud -> Add a new cloud -> Docker
+   **Jenkins** -> **Manage Jenkins** -> **Configure System** -> **Cloud** -> **Add a new cloud** -> **Docker**
    
    <img src="https://github.com/mytaxi/AndroidCI/blob/master/screenshots/jenkins_config_cloud_docker.png?raw=true">
    
@@ -52,5 +52,7 @@
    brew install socat
    socat TCP-LISTEN:2375,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock
    ```
+   
+   Finally, you can click **Docker Agent templates...** -> **Add Docker Template**
 
 ### Android SDK
