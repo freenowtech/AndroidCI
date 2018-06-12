@@ -31,6 +31,7 @@
 * Install Plugins (no need if you use persistent volume)
 
    * [Docker Plugin](https://plugins.jenkins.io/docker-plugin)
+   * [Android Lint](https://plugins.jenkins.io/android-lint)
 
 * Configure Docker Plugin
 
