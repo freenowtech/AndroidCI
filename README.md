@@ -69,5 +69,7 @@
    /var/jenkins_home/.ssh/id_rsa.pub
    /var/jenkins_home/.ssh/id_rsa
    ```
+   
+   Copy the content of your `id_rsa.pub` file and put into the mounted `authorized_keys` file.
 
 ### Android SDK
