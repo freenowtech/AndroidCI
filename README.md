@@ -54,6 +54,8 @@
    ```
    
    Finally, you can click **Docker Agent templates...** -> **Add Docker Template**
+   
+   <img src="https://github.com/mytaxi/AndroidCI/blob/master/screenshots/jenkins_config_docker_agent_template.png?raw=true">
 
 * SSH authentication (optional)
 
