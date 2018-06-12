@@ -31,6 +31,7 @@
 * Install Plugins (no need if you use persistent volume)
 
    * [Docker Plugin](https://plugins.jenkins.io/docker-plugin)
+   * [Blue Ocean](https://wiki.jenkins.io/display/JENKINS/Blue+Ocean+Plugin)
 
 * Configure Docker Plugin
 
