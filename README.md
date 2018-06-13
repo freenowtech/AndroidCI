@@ -1,5 +1,9 @@
 # AndroidCI
 
+## CI Architecture
+
+<img src="https://github.com/mytaxi/AndroidCI/blob/master/screenshots/jenkins_architecture.png?raw=true">
+
 ## Setup Environment
 
 ### Docker
