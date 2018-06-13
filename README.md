@@ -85,3 +85,7 @@
    <img src="https://github.com/mytaxi/AndroidCI/blob/master/screenshots/jenkins_config_credentials.png?raw=true">
 
 ### Android SDK
+
+[Project and source code](https://github.com/thyrlian/AndroidSDK)
+
+[Docker Image](https://hub.docker.com/r/thyrlian/android-sdk/)
