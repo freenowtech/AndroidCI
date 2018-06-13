@@ -64,7 +64,9 @@
    ```console
    docker exec -it $(docker ps -aq -f "ancestor=jenkins:2.60.3-alpine" -f "status=running" ) bash
    ```
-
+   
+   Generate a new SSH key
+   
    ```console
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
