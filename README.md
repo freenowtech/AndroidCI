@@ -57,7 +57,13 @@
    
    <img src="https://github.com/mytaxi/AndroidCI/blob/master/screenshots/jenkins_config_docker_agent_template.png?raw=true">
 
-* SSH authentication (optional)
+* SSH authentication
+
+   Create a new bash session to the Jenkins container
+   
+   ```console
+   docker exec -it $(docker ps -aq -f "ancestor=jenkins:2.60.3-alpine" -f "status=running" ) bash
+   ```
 
    ```console
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
