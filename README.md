@@ -66,7 +66,7 @@
    Create a new bash session to the Jenkins container
    
    ```console
-   docker exec -it $(docker ps -aq -f "ancestor=jenkins:2.60.3-alpine" -f "status=running" ) bash
+   docker exec -it $(docker ps -aq -f "ancestor=jenkins:2.60.3-alpine" -f "status=running") bash
    ```
    
    Generate a new SSH key
