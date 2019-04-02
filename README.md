@@ -29,7 +29,7 @@
 * Get the initial admin password
 
    ```console
-   docker cp $(docker ps -aq -f "ancestor=jenkins:2.60.3-alpine" -f "status=running"):/var/jenkins_home/secrets/initialAdminPassword initialAdminPassword && cat initialAdminPassword && rm initialAdminPassword
+   docker exec -it `docker ps -aq -f "ancestor=jenkins:2.60.3-alpine" -f "status=running"` bash -c 'cat /var/jenkins_home/secrets/initialAdminPassword'
    ```
 
 * Install Plugins (no need if you use persistent volume)
