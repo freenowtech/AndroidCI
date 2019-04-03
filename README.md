@@ -84,7 +84,7 @@
    
    Copy the content of your `id_rsa.pub` file and put into the mounted `authorized_keys` file.
    
-   Add and set a new SSH credential in Jenkins
+   Add and set a new SSH credential in Jenkins.  Go to Jenkins -> Credentials - System (<YOUR_JENKINS_URL>/credentials/store/system/)
    
    <img src="https://github.com/mytaxi/AndroidCI/blob/master/screenshots/jenkins_config_credentials.png?raw=true">
 
