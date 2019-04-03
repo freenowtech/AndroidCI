@@ -55,6 +55,16 @@
    # on macOS
    brew install socat
    socat TCP-LISTEN:2376,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock
+   
+   # on Linux (Debian)
+   # changing DOCKER_OPTS is optional
+   # Use DOCKER_OPTS to modify the daemon startup options
+   # echo -e '\nDOCKER_OPTS="-H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock"\n' | sudo tee --append /etc/default/docker > /dev/null
+   sudo sed -i.bak 's?ExecStart.*?ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock?g' /lib/systemd/system/docker.service
+   sudo systemctl daemon-reload
+   sudo systemctl restart docker.service
+   # check if the port is listened or not
+   sudo netstat -tulpn | grep LISTEN
    ```
    
    Finally, you can click **Docker Agent templates...** -> **Add Docker Template**
