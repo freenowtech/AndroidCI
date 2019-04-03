@@ -72,7 +72,7 @@
    Generate a new SSH key
    
    ```console
-   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   yes y | ssh-keygen -t rsa -N "" -b 4096 -C "your_email@example.com"
    ```
    
    The keys will be generated here by default:
